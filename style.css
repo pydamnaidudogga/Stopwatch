@@ -1,0 +1,90 @@
+/* in this web page the used colors are black,green,blue,gray,white
+*/
+body{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+/* this is main-heading to the web page  */
+h1{
+    color: rgb(202, 202, 202);
+    margin-top:40px ;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+/* this is the stopWatch main-contianer */
+#stopWatch-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
+/* this is the circle inside the stopWatch-main-container */
+#circle{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px red solid; */
+}
+/* this keyframes are used for circle border animation.The animation is used in javascript file */
+@keyframes border {
+    0%{
+        border: 2px green solid;
+    }
+    100%{
+       border: 2px blue solid;
+    }
+
+    
+}
+/* this id for timer container */
+#time{
+   font-size: 4rem;
+}
+/* this is the buttons contianer */
+#buttons-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    position: absolute;
+    left: 25%;
+    margin-top: 60px;
+
+}
+/* this applays to all the buttons */
+button{
+    border-radius: 20px;
+    width: 70px;
+    height: 35px;
+}
+ 
+button strong{
+    font-size: 18px;
+    color: rgb(21, 21, 21);
+}
+/* this is the start button  */
+#start{
+    background-color: green;
+}
+#start:hover{
+    background-color: rgb(3, 83, 3);
+}
+/* this is the stop button */
+#stop{
+    background-color: brown;
+}
+#stop:hover{
+    background-color: rgb(126, 46, 46);
+}
+/* this is the teset button */
+#reset{
+    background-color: darkgoldenrod;
+}
+#reset:hover{
+    background-color: rgb(122, 89, 6);
+}
